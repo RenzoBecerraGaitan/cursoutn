@@ -1,0 +1,13 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.subtitle {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 800;
+}

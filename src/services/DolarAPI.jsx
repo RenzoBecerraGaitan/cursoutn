@@ -1,9 +1,7 @@
+let getDolarPrice = async () => {
+  let url = await fetch(`https://dolarapi.com/v1/dolares`);
+  let data = await url.json();
+  return data;
+};
 
-let getDolarPrice = async(typeOfDolar) =>{
-    let url = await fetch(`https://dolarapi.com/v1/dolares/${typeOfDolar}`);
-    let data = url.json();
-    return data;
-}
-
-
-export {getDolarPrice};
+export default getDolarPrice;

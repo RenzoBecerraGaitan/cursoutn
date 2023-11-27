@@ -32,10 +32,17 @@ function DolarBox() {
         {dolarPrices.map((a, index) => {
           if (a.nombre !== "Solidario") {
             return (
-              <div className="dolar-item" key={`${a.nombre}-${index}`}>
-                <h2 className="dolar-name">Dolar {a.nombre}</h2>
-                <h2 className="dolar-price">Compra: ${a.compra}</h2>
-                <h2 className="dolar-price">Venta: ${a.venta}</h2>
+              <div className="dolar-item " key={`${a.nombre}-${index}`}>
+                <h2 className="dolar-name">
+                  {" "}
+                  <i className="bi bi-cash"></i>Dolar {a.nombre}
+                </h2>
+                <h2 className="dolar-price">
+                  <i className="bi bi-cash-coin"></i>Compra: ${a.compra}
+                </h2>
+                <h2 className="dolar-price">
+                  <i className="bi bi-cash-coin"></i>Venta: ${a.venta}
+                </h2>
               </div>
             );
           }
